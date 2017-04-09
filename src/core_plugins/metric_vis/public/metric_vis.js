@@ -27,7 +27,8 @@ function MetricVisProvider(Private) {
     params: {
       defaults: {
         handleNoResults: true,
-        fontSize: 60
+        fontSize: 60,
+        image: false
       },
       editor: metricVisParamsTemplate
     },
