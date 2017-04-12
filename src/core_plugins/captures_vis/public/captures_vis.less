@@ -1,0 +1,24 @@
+@import (reference) "~ui/styles/mixins.less";
+
+.capture-vis {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .capture-value {
+    font-weight: bold;
+    .ellipsis();
+  }
+
+  .capture-container {
+    text-align: center;
+    margin: auto;
+  }
+}
+
+#capture_timeline {
+  circle {
+    opacity: 1;
+  }
+}

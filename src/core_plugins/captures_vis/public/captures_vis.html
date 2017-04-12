@@ -1,0 +1,11 @@
+<!-- <script src="https://raw.githubusercontent.com/jiahuang/d3-timeline/master/src/d3-timeline.js"></script> -->
+<div ng-controller="KbnCapturesVisController" class="capture-vis">
+  <div class="capture-container" ng-repeat="capture in captures" style="display: none;">
+      <img ng-if="vis.params.image" src="{{capture.value}}" width="100%" height="100%">
+      <div ng-if="!vis.params.image" class="capture-value" ng-style="{'font-size': vis.params.fontSize+'pt'}">{{capture.value}}</div>
+      <div>{{capture.label}}</div>
+      <code id="captures_logging"></code>
+  </div>
+  <svg id="capture_timeline"></svg>
+  <img id="capture_image" src="" alt="">
+</div>
