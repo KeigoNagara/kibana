@@ -3,6 +3,7 @@ import AggResponseTabifyTabifyProvider from 'ui/agg_response/tabify/tabify';
 import uiModules from 'ui/modules';
 import d3 from 'd3';
 
+
 const $ = require('jquery');
 
 // get the kibana/metric_vis module, and make sure that it requires the "kibana" module if it
@@ -96,7 +97,7 @@ module.controller('KbnCapturesVisController', function ($scope, $element, Privat
         .on('click', function (d) {
           d3.select(this).attr('fill', 'blue');
           const src = d3.select(this).attr('data-img-src');
-          $('#capture_image').attr('src', src);
+          $('#capture_image').attr('src', src).height(220); // size change
         });
       },
       datatype: 'json',
